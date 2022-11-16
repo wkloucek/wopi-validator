@@ -1,0 +1,3 @@
+[submodule "wopi-validator-core"]
+	path = wopi-validator-core
+	url = git@github.com:microsoft/wopi-validator-core.git
