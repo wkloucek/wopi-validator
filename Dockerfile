@@ -17,6 +17,7 @@ RUN find /app/src/WopiValidator/bin/Release
 FROM mcr.microsoft.com/dotnet/runtime:6.0-alpine
 
 WORKDIR /app/
+COPY --from=build /app/LICENSE /app/LICENSE
 COPY --from=build /app/src/WopiValidator/bin/Release/net6.0 /app
 
 ENTRYPOINT [ "/app/Microsoft.Office.WopiValidator"]
